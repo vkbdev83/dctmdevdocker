@@ -1,0 +1,33 @@
+
+
+#Load Documentum Content Server & Administrator Images into your local registry
+ docker load -i Contentserver_Centos.tar
+
+ docker load -i DA_20.2.0000.0051.tar  
+
+#List all the the volumes
+ docker volume ls
+
+ # Connect to the Containers
+
+ docker exec -it dastatelesscontainer /bin/bash
+ docker exec -it postgresdb /bin/bash
+ docker exec -it dctmxs20 /bin/bash
+
+ # Setup Database/Content Server/DA_
+ ./Install_Documentum.sh
+
+ #Stop All Services
+ ./Stop_Documentum.sh
+
+ #Start All Services
+ ./Start_Documentum.sh
+
+ #Remove/Delete Containers
+ ./Remove_Documentum.sh
+
+ # TO rebuild docker Images
+ docker-compose build
+
+
+
