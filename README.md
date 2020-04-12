@@ -55,6 +55,9 @@ vishnukumarsmbp:DctmDocker vishshob$
  Also refer Opentext Documentum Cloud deployment guide for additional info.
  
  Additional useful commands are available in "Useful Commands" file.
+ 
+ Video available in https://youtu.be/pPJIt5ZuJXo
+ 
         
         
               
