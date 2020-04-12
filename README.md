@@ -35,11 +35,12 @@ vishnukumarsmbp:DctmDocker vishshob$
      5. Compose file is created to orchestrate the DB/Content Server/DA in the right order , this makes our life very easier.
      
         i. Checkout this GIT project.
-        ii. Nvaigate to the corresponding checkout directory in a Terminal
+        ii. Navigate to the corresponding checkout directory in a Terminal
         iii. Execute the below command
               CMD >  ./Install_Documentum.sh
               
-        iv. This normally takes 15 - 20 minutes .Documentum Content Server process takes moost of the time , approx 15 minutes
+        iv. This normally takes 15 - 20 minutes .Documentum Content Server process takes moost of the time , 
+        approx 15 minutes
         v. Monitor the Content Server setup process using the below logs in the Content Server Container.
         
             /opt/dctm_docker/logs/dctmcs20.log
